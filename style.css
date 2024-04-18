@@ -1,8 +1,8 @@
 .container {
     display: grid; 
     grid-template-columns: repeat(2, 1fr); 
-    grid-gap: 20px; 
-    max-width: 1200px;
+    height: 70%;
+    width: 100%;
     margin: 0 auto;
     background-color: #999999;
     border: 3px solid orangered;
@@ -10,14 +10,15 @@
 
 .block {
     background-color: #999999;
-    padding: 20px;
+    padding: 1vh;
     height: 45vh;
+    weight: 45vh;
     border: 3px solid orangered;
 }
 
 .container h1 {
     font-size: 40px;
-    padding-left: 40vh;
+    padding-left: 50vh;
 }
 
 .block h2 {
@@ -37,4 +38,7 @@
 .block ul li::before {
     content: "•";
     margin-right: 5px;
+}
+.block::before{
+    counter();
 }
